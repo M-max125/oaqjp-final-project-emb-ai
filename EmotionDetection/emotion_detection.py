@@ -8,7 +8,6 @@ def emotion_detector(text_to_analyze):
 
 
     response = requests.post(url, json=input_json, headers=headers)
-    print(response)
     
     if response.status_code == 200:
         # 1. Extract the emotion dictionary from the JSON response
